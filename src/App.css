@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.login-component {
+  background-color: #9463f7;
+}
+
+.text-area {
+  font-weight: 900;
+  color: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 1.1;
+  font-size: xx-large;
+}
+
+.text-container h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: normal;
+}
+.vertical-line {
+  width: 13px;
+  height: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-right: 16px;
+}
+
+.login-component {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  height: 600px;
+  width: 500px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size:  xx-large;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding-right: 20px;
+  gap: 20px;
+}
+
+.input-field {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  placeholder {
+    color: #999;
+  }
+  gap: 4px;
+}
+
+.radio-container {
+  display: flex;
+  gap: 30px;
+}
+
+.join {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 15px;
+}
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #7f56da;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: large;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
