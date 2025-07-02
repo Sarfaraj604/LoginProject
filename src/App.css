@@ -13,7 +13,7 @@ body {
   font-weight: 900;
   color: #ffffff;
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 20px;
 }
 
@@ -32,10 +32,9 @@ body {
 }
 .vertical-line {
   width: 13px;
-  height: 300px;
   background-color: #ffffff;
   border-radius: 10px;
-  margin-right: 16px;
+  align-self: stretch;
 }
 
 .login-component {
@@ -108,3 +107,63 @@ body {
 }
 
 
+
+@media (max-width: 1024px) {
+  .login-component {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .text-area {
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 16px;
+  }
+
+  .vertical-line {
+    height: 80px;
+    width: 8px;
+    margin: 0;
+  }
+
+  .text-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .login-form {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .input-field {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .join {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .radio-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .login-form {
+    padding: 20px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
